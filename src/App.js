@@ -22,9 +22,9 @@ const App = () => {
   const likePost = postId => {
     const newPost = posts.map(post => {
       if (post.id === postId) {
-        return {...posts, likes: posts.likes + 1}
+        return {...post, likes: post.likes + 1}
       } else {
-        return posts
+        return post
       }
     })
     setPosts(newPost);
